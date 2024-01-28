@@ -91,3 +91,54 @@ p {
  padding-right: 0px;
  text-align: left;
 }
+#slideshow {
+    margin: 0;
+  }
+  
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: 0;
+  }
+  
+  .mySlides {
+    display: none;
+    position: absolute;
+    width: 100%; /* Make sure each slide takes up the full width */
+    top: 0; /* Ensure slides are at the top of the container */
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 0%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #010101;
+    padding: ;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  
+  article {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
