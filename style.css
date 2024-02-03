@@ -109,10 +109,26 @@ p {
   }
   
   img {
-    width: 100%;
+    max-width: 94%;
     height: auto;
-    display: block; /* To remove extra space below inline images */
-    margin: 0 auto; /* To center the image within its container */
+    display: block;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 100%;
+    max-width: 70ch; /* Adjust the max-width based on your layout */
+    margin: auto;
+    
+  }
+  .image-cell {
+    width: 25%; /* Adjust the width of the image column */
+    vertical-align: top; /* Align at the top */
+  }
+
+  .text-cell {
+    width: 75%; /* The text column will take the remaining width */
+    vertical-align: top; /* Align at the top */
   }
   
   .prev,
