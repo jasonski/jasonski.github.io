@@ -110,6 +110,9 @@ p {
   
   img {
     width: 100%;
+    height: auto;
+    display: block; /* To remove extra space below inline images */
+    margin: 0 auto; /* To center the image within its container */
   }
   
   .prev,
