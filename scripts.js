@@ -12,14 +12,17 @@ function showSlides() {
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
+  if (slideIndex < 1) {
+    slideIndex = slides.length;
+  }
 
-  slides[slideIndex - 1].style.display = "block";
-  timer = setTimeout(showSlides, 15000); // Change slide every 15 seconds
+  slides[slideIndex-1].style.display = "block";
+  timer = setTimeout(showSlides, 10000); // Change slide every 15 seconds
 }
 
 function plusSlides(n) {
   clearTimeout(timer);
-  showSlides((slideIndex += 0));
+  showSlides((slideIndex += n-1));
 }
 
 document.addEventListener("DOMContentLoaded", () => {
